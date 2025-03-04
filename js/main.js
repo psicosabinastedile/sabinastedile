@@ -374,7 +374,7 @@ const sidebarMenu = {
 
 		sidebarButton.classList.add("sidebarButton", "unselectable");
 		sidebarButton.addEventListener("click", () => sidebarMenu.toggle());
-		img.src = "/assets/icons/menu.png";
+		img.src = iconLibrary.sidebarButton.src;
 		img.id = "openMenuImg";
 		sidebarButton.id = "openMenuButton";
 	},
@@ -690,7 +690,9 @@ const buildCarousel = {
 
 		function createButton(side) {
 			const img = document.createElement("img");
-			img.src = `/assets/icons/${side}CarouselButton.svg`;
+			const {leftCarouselButton, rightCarouselButton} = iconLibrary;
+			const buttonImage = side === "left" ? leftCarouselButton : rightCarouselButton;
+			img.src = buttonImage.src;
 			img.addEventListener("click", () => buildCarousel.toggleNext(side));
 			container.append(img);
 		}
