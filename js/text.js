@@ -6,69 +6,69 @@ const colorLibrary = {
 
 const imageLibrary = {
 	header: {
-		logo: {src: "/assets/icons/logo.webp", alt: "Logo Sabina M. Stedile, psicóloga clínica, CRP: 07/40927."},
+		logo: {src: "assets/icons/logo.webp", alt: "Logo Sabina M. Stedile, psicóloga clínica, CRP: 07/40927."},
 	},
 	home: {
 		welcome: {
-			src: "/assets/images/internal/home_2023_welcome.webp",
+			src: "assets/images/internal/home_2023_welcome.webp",
 			alt: "Psicóloga Sabina Stedile sorrindo, com olhar tranquilo.",
 		},
 		greetings: {
-			src: "/assets/images/internal/home_2023_salãoDeBeleza.webp",
+			src: "assets/images/internal/home_2023_salãoDeBeleza.webp",
 			alt: "Sabina Stedile sorrindo de lado, com expressão serena.",
 		},
 		services: [
 			{
-				src: "/assets/images/external/home_avaliacaoNeuropsicologica.jpg",
+				src: "assets/images/external/home_avaliacaoNeuropsicologica.jpg",
 				alt: "Mulher segurando caneta e prancheta, vista por trás da avaliadora.",
 			},
 			{
-				src: "/assets/images/external/home_psicoterapia.jpg",
+				src: "assets/images/external/home_psicoterapia.jpg",
 				alt: "Mulher angustiada em sessão de psicoterapia, pela visão da psicóloga.",
 			},
 			{
-				src: "/assets/images/external/home_palestra.webp",
+				src: "assets/images/external/home_palestra.webp",
 				alt: "Múltiplas pessoas sentadas em cadeiras assistindo a uma palestra, pela visão do palestrante.",
 			},
 			{
-				src: "/assets/images/external/home_aconselhamentoDePais.jpg",
+				src: "assets/images/external/home_aconselhamentoDePais.jpg",
 				alt: "Uma criança com expressão emburrada sentada no chão com um brinquedo na mão, em um consultório.",
 			},
 		],
 	},
 	sobreMim: {
-		greetings: {src: "/assets/images/internal/sobreMim_header.webp", alt: "Sabina sorrindo para a câmera."},
+		greetings: {src: "assets/images/internal/sobreMim_header.webp", alt: "Sabina sorrindo para a câmera."},
 		firstTimelineSection: [
 			{
-				src: "/assets/images/internal/sobreMim_inovamundi_2019.jpg",
+				src: "assets/images/internal/sobreMim_inovamundi_2019.jpg",
 				alt: "Sabina apresentando um trabalho em slides sobre envelhecimento bem-sucedido no Inovamundi.",
 			},
 			{
-				src: "/assets/images/internal/sobreMim_estagio_feevale.jpg",
+				src: "assets/images/internal/sobreMim_estagio_feevale.jpg",
 				alt: "Sabina ao lado do logo do Centro Integrado de Psicologia da Universidade Feevale.",
 			},
 		],
 		secondTimelineSection: [
 			{
-				src: "/assets/images/internal/sobreMim_ultimoSemestre.jpg",
+				src: "assets/images/internal/sobreMim_ultimoSemestre.jpg",
 				alt: "Sabina segurando livros sorrindo para a câmera, sentada na grama em frente ao logo da Universidade Feevale.",
 			},
 			{
-				src: "/assets/images/internal/sobreMim_chimarrao.webp",
+				src: "assets/images/internal/sobreMim_chimarrao.webp",
 				alt: `Chimarrão em foco e, ao fundo, o livro "Fadas no Divã".`,
 			},
 		],
 		today: [
 			{
-				src: "/assets/images/internal/sobreMim_atendimentoOnline.jpg",
+				src: "assets/images/internal/sobreMim_atendimentoOnline.jpg",
 				alt: "Sabina trabalhando no computador, sorrindo, com flores ao lado.",
 			},
 			{
-				src: "/assets/images/internal/sobreMim_atendimentoPresencial.webp",
+				src: "assets/images/internal/sobreMim_atendimentoPresencial.webp",
 				alt: "Consultório clínico, na visão da psicóloga.",
 			},
 			{
-				src: "/assets/images/internal/sobreMim_livroInfancia.webp",
+				src: "assets/images/internal/sobreMim_livroInfancia.webp",
 				alt: `Livro "A Infância Através do Espelho", em cima de uma mesa.`,
 			},
 		],
@@ -76,53 +76,53 @@ const imageLibrary = {
 	avaliacaoNeuropsicologica: {
 		ageRange: [
 			{
-				src: "/assets/images/external/avaliacaoNeuropsicologica_preEscolar.jpg",
+				src: "assets/images/external/avaliacaoNeuropsicologica_preEscolar.jpg",
 				alt: "Criança no chão, de bruços brincando com cubos de montar.",
 			},
 			{
-				src: "/assets/images/external/avaliacaoNeuropsicologica_escolar.jpg",
+				src: "assets/images/external/avaliacaoNeuropsicologica_escolar.jpg",
 				alt: "Criança desenhando em uma oficina de desenhos.",
 			},
 			{
-				src: "/assets/images/external/avaliacaoNeuropsicologica_adultez.jpg",
+				src: "assets/images/external/avaliacaoNeuropsicologica_adultez.jpg",
 				alt: "Jovem lendo um livro sentada em uma cadeira, em frente a uma escrivaninha.",
 			},
 			{
-				src: "/assets/images/external/avaliacaoNeuropsicologica_envelhecimento.webp",
+				src: "assets/images/external/avaliacaoNeuropsicologica_envelhecimento.webp",
 				alt: "Dois idosos felizes, sorrindo para a câmera.",
 			},
 		],
 		firstFaq: [
 			{
-				src: "/assets/images/external/avaliacaoNeuropsicologica_teenager.webp",
+				src: "assets/images/external/avaliacaoNeuropsicologica_teenager.webp",
 				alt: "Adolescente angustiada em sessão de psicoterapia, visão da psicóloga.",
 			},
 			{
-				src: "/assets/images/external/avaliacaoNeuropsicologica_happyChild.webp",
+				src: "assets/images/external/avaliacaoNeuropsicologica_happyChild.webp",
 				alt: "Criança brincando com blocos de montar sendo avaliada pela neuropsicóloga.",
 			},
 		],
 		fixedScreen: {
 			preEscolar: {
-				src: "/assets/images/external/avaliacaoNeuropsicologica_preEscolar_popup.jpg",
+				src: "assets/images/external/avaliacaoNeuropsicologica_preEscolar_popup.jpg",
 				alt: "Criança escondendo-se parcialmente atrás de um sofá.",
 			},
 			escolar: {
-				src: "/assets/images/external/avaliacaoNeuropsicologica_escolar_popup.jpg",
+				src: "assets/images/external/avaliacaoNeuropsicologica_escolar_popup.jpg",
 				alt: "Duas crianças com livros na cabeça sentadas em um muro, sorrindo uma para a outra.",
 			},
 			adultez: {
-				src: "/assets/images/external/avaliacaoNeuropsicologica_adultez_popup.jpg",
+				src: "assets/images/external/avaliacaoNeuropsicologica_adultez_popup.jpg",
 				alt: "Adolescente lendo um livro, olhando para a câmera.",
 			},
 			envelhecimento: {
-				src: "/assets/images/external/avaliacaoNeuropsicologica_envelhecimento_popup.jpg",
+				src: "assets/images/external/avaliacaoNeuropsicologica_envelhecimento_popup.jpg",
 				alt: "Idosos abraçados em uma sacada de um prédio, olhando pela janela.",
 			},
 		},
 		secondFaq: [
 			{
-				src: "/assets/images/external/avaliacaoNeuropsicologica_benefits.webp",
+				src: "assets/images/external/avaliacaoNeuropsicologica_benefits.webp",
 				alt: "Adolescente angustiada em sessão de psicoterapia, visão da psicóloga.",
 			},
 		],
@@ -130,11 +130,11 @@ const imageLibrary = {
 	psicoterapia: {
 		firstFaq: [
 			{
-				src: "/assets/images/external/psicoterapia_sofrimento.jpg",
+				src: "assets/images/external/psicoterapia_sofrimento.jpg",
 				alt: "Mulher em sofrimento com as mãos sobre o rosto.",
 			},
 			{
-				src: "/assets/images/external/psicoterapia_consultaJovem.webp",
+				src: "assets/images/external/psicoterapia_consultaJovem.webp",
 				alt: "Adolescente sentada em uma poltrona com expressão preocupada durante uma sessão de psicoterapia.",
 			},
 		],
@@ -142,15 +142,15 @@ const imageLibrary = {
 };
 
 const iconLibrary = {
-	email: {src: "/assets/icons/email.png", alt: "Ícone de e-mail"},
-	instagram: {src: "/assets/icons/instagram.png", alt: "Ícone do Instagram"},
-	linkedin: {src: "/assets/icons/linkedin.png", alt: "Ícone do LinkedIn"},
-	menu: {src: "/assets/icons/menu.png", alt: "Ícone de menu"},
-	phone: {src: "/assets/icons/phone.png", alt: "Ícone de telefone"},
-	pin: {src: "/assets/icons/pin.png", alt: "Ícone de pin"},
-	whatsapp: {src: "/assets/icons/whatsapp.png", alt: "Ícone do Whatsapp"},
-	world: {src: "/assets/icons/world.png", alt: "Ícone do planeta Terra"},
-	youtube: {src: "/assets/icons/youtube.png", alt: "Ícone do Youtube"},
+	email: {src: "assets/icons/email.png", alt: "Ícone de e-mail"},
+	instagram: {src: "assets/icons/instagram.png", alt: "Ícone do Instagram"},
+	linkedin: {src: "assets/icons/linkedin.png", alt: "Ícone do LinkedIn"},
+	menu: {src: "assets/icons/menu.png", alt: "Ícone de menu"},
+	phone: {src: "assets/icons/phone.png", alt: "Ícone de telefone"},
+	pin: {src: "assets/icons/pin.png", alt: "Ícone de pin"},
+	whatsapp: {src: "assets/icons/whatsapp.png", alt: "Ícone do Whatsapp"},
+	world: {src: "assets/icons/world.png", alt: "Ícone do planeta Terra"},
+	youtube: {src: "assets/icons/youtube.png", alt: "Ícone do Youtube"},
 };
 
 const linkLibrary = {
