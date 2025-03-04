@@ -19,19 +19,19 @@ const imageLibrary = {
 		},
 		services: [
 			{
-				src: "assets/images/external/home_avaliacaoNeuropsicologica.jpg",
+				src: "../assets/images/external/home_avaliacaoNeuropsicologica.jpg",
 				alt: "Mulher segurando caneta e prancheta, vista por trás da avaliadora.",
 			},
 			{
-				src: "assets/images/external/home_psicoterapia.jpg",
+				src: "../assets/images/external/home_psicoterapia.jpg",
 				alt: "Mulher angustiada em sessão de psicoterapia, pela visão da psicóloga.",
 			},
 			{
-				src: "assets/images/external/home_palestra.webp",
+				src: "../assets/images/external/home_palestra.webp",
 				alt: "Múltiplas pessoas sentadas em cadeiras assistindo a uma palestra, pela visão do palestrante.",
 			},
 			{
-				src: "assets/images/external/home_aconselhamentoDePais.jpg",
+				src: "../assets/images/external/home_aconselhamentoDePais.jpg",
 				alt: "Uma criança com expressão emburrada sentada no chão com um brinquedo na mão, em um consultório.",
 			},
 		],
@@ -76,19 +76,19 @@ const imageLibrary = {
 	avaliacaoNeuropsicologica: {
 		ageRange: [
 			{
-				src: "assets/images/external/avaliacaoNeuropsicologica_preEscolar.jpg",
+				src: "../assets/images/external/avaliacaoNeuropsicologica_preEscolar.jpg",
 				alt: "Criança no chão, de bruços brincando com cubos de montar.",
 			},
 			{
-				src: "assets/images/external/avaliacaoNeuropsicologica_escolar.jpg",
+				src: "../assets/images/external/avaliacaoNeuropsicologica_escolar.jpg",
 				alt: "Criança desenhando em uma oficina de desenhos.",
 			},
 			{
-				src: "assets/images/external/avaliacaoNeuropsicologica_adultez.jpg",
+				src: "../assets/images/external/avaliacaoNeuropsicologica_adultez.jpg",
 				alt: "Jovem lendo um livro sentada em uma cadeira, em frente a uma escrivaninha.",
 			},
 			{
-				src: "assets/images/external/avaliacaoNeuropsicologica_envelhecimento.webp",
+				src: "../assets/images/external/avaliacaoNeuropsicologica_envelhecimento.webp",
 				alt: "Dois idosos felizes, sorrindo para a câmera.",
 			},
 		],
