@@ -158,7 +158,7 @@ const iconLibrary = {
 
 const linkLibrary = {
 	internal: {
-		home: "index.html",
+		home: "/",
 		sobreMim: "sobre-mim.html",
 		avaliacaoNeuropsicologica: "avaliacao-neuropsicologica.html",
 		psicoterapia: "psicoterapia.html",
