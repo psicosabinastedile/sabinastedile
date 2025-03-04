@@ -142,6 +142,9 @@ const imageLibrary = {
 };
 
 const iconLibrary = {
+	sidebarButton: {src: "assets/icons/menu.png"},
+	leftCarouselButton: {src: "assets/icons/leftCarouselButton.svg"},
+	rightCarouselButton: {src: "assets/icons/rightCarouselButton.svg"},
 	email: {src: "assets/icons/email.png", alt: "Ícone de e-mail"},
 	instagram: {src: "assets/icons/instagram.png", alt: "Ícone do Instagram"},
 	linkedin: {src: "assets/icons/linkedin.png", alt: "Ícone do LinkedIn"},
