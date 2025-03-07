@@ -17,6 +17,7 @@ const meta = {
 
 		buildPageTitle.createAll(thisPage);
 		buildQuote.createAll(thisPage);
+		buildSpecialButtons.createAll(thisPage, "ageRange");
 		buildFaq.createAll(thisPage, true);
 
 		siteFooter.createAll();
