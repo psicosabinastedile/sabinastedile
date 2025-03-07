@@ -790,16 +790,14 @@ const buildQuote = {
 	createAll(page, number = "first", alternate = false) {
 		if (!number) throw new Error("Please define an id.");
 
-		this.createContainer(page, number, alternate);
+		this.createContainer(number, alternate);
 		this.createTextContent(page, number);
 	},
-	createContainer(page, number, alternate) {
+	createContainer(number, alternate) {
 		const id = `${number}QuoteSection`;
 		const containerClass = alternate ? "alternateQuoteContainer" : "quoteContainer";
 		const container = sectionMethods.createSectionContainer(id);
 		container.classList.add(containerClass);
-		if (page !== "psicoterapia") return;
-		container.classList.add("marginBottomNone");
 	},
 	createTextContent(page, number) {
 		const id = `${number}QuoteSection`;
@@ -817,7 +815,7 @@ const buildSpecialButtons = {
 	createAll(page, sectionId) {
 		this.createSectionContainer(sectionId);
 		this.createHeader(page, sectionId);
-		this.createButtonsContainer(sectionId);
+		this.createButtonsContainer(page, sectionId);
 		this.createButtons(page, sectionId);
 	},
 	createSectionContainer(sectionId) {
@@ -830,11 +828,13 @@ const buildSpecialButtons = {
 		const header = build.h3(text);
 		container.append(header);
 	},
-	createButtonsContainer(sectionId) {
+	createButtonsContainer(page, sectionId) {
 		const sectionDiv = document.getElementById(sectionId);
 		const container = document.createElement("div");
 		container.id = `${sectionId}ButtonsContainer`;
 		container.classList.add(`specialButtonsContainer`, "scrollableX");
+		if (page === "psicoterapia") container.style.gridTemplateColumns = "repeat(5, 15rem)";
+
 		sectionDiv.append(container);
 	},
 	createButtons(page, sectionId) {
@@ -920,17 +920,17 @@ const fixedScreen = {
 			if (history.state?.isFixedScreenOpen) history.back();
 		}
 	},
-	createAll(ageRange) {
+	createAll(pageId, ageRange) {
 		this.open();
-		this.createHeader(ageRange);
-		this.createLeftDiv(ageRange);
-		this.createRightDiv(ageRange);
+		this.createHeader(pageId, ageRange);
+		this.createLeftDiv(pageId, ageRange);
+		this.createRightDiv(pageId, ageRange);
 	},
-	createHeader(ageRange) {
+	createHeader(pageId, ageRange) {
 		const fixedScreen = document.getElementById("fixedScreen");
 		const container = document.createElement("div");
 
-		const text = textLibrary.avaliacaoNeuropsicologica.fixedScreen[ageRange].header;
+		const text = textLibrary[pageId].fixedScreen[ageRange].header;
 		const header = build.h3(text);
 		const closeButton = build.button("");
 		closeButton.classList.add("xShape");
@@ -940,7 +940,7 @@ const fixedScreen = {
 		container.append(header, closeButton);
 		fixedScreen.append(container);
 	},
-	createLeftDiv(ageRange) {
+	createLeftDiv(pageId, ageRange) {
 		const fixedScreen = document.getElementById("fixedScreen");
 		const container = document.createElement("div");
 		const leftDiv = document.createElement("div");
@@ -959,7 +959,7 @@ const fixedScreen = {
 		}
 		function createContent() {
 			const container = document.createElement("div");
-			const textObject = textLibrary.avaliacaoNeuropsicologica.fixedScreen[ageRange];
+			const textObject = textLibrary[pageId].fixedScreen[ageRange];
 			const subheader = build.h4(textObject.subheader);
 
 			const frag = sectionMethods.createContent(textObject.content);
@@ -967,13 +967,13 @@ const fixedScreen = {
 			return [subheader, container];
 		}
 	},
-	createRightDiv(ageRange) {
+	createRightDiv(pageId, ageRange) {
 		const container = document.getElementById("fixedScreenContentContainer");
 		const rightDiv = document.createElement("div");
 		rightDiv.classList.add("fixedScreenRight");
 		container.append(rightDiv);
 
-		const source = imageLibrary.avaliacaoNeuropsicologica.fixedScreen[ageRange];
+		const source = imageLibrary[pageId].fixedScreen[ageRange];
 		const img = build.img(source);
 		rightDiv.append(img);
 	},
