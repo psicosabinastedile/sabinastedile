@@ -61,7 +61,7 @@ const imageLibrary = {
 		today: [
 			{
 				src: "assets/images/internal/sobreMim_atendimentoOnline.jpg",
-				alt: "Sabina trabalhando no computador, sorrindo, com flores ao lado.",
+				alt: "Sabina trabalhando atenta no computador.",
 			},
 			{
 				src: "assets/images/internal/sobreMim_atendimentoPresencial.webp",
@@ -128,6 +128,50 @@ const imageLibrary = {
 		],
 	},
 	psicoterapia: {
+		ageRange: [
+			{
+				src: "../assets/images/external/psicoterapia_infancia.jpg",
+				alt: "Criança feliz correndo sobre a grama em direção à câmera.",
+			},
+			{
+				src: "../assets/images/external/psicoterapia_adolescencia.jpg",
+				alt: "Adolescente atentiva mexendo no celular.",
+			},
+			{
+				src: "../assets/images/external/psicoterapia_jovemAdultez.jpg",
+				alt: "Jovem em cima do muro observando a paisagem.",
+			},
+			{
+				src: "../assets/images/external/psicoterapia_adultezMadura.jpg",
+				alt: "Senhora sorrindo para a câmera.",
+			},
+			{
+				src: "../assets/images/external/psicoterapia_adultezTardia.jpg",
+				alt: "Senhora sorrindo de lado.",
+			},
+		],
+		fixedScreen: {
+			infancia: {
+				src: "assets/images/external/psicoterapia_infancia_popup.jpg",
+				alt: "Três crianças sorrindo felizes.",
+			},
+			adolescencia: {
+				src: "assets/images/external/psicoterapia_adolescencia_popup.jpg",
+				alt: "Adolescente feliz de boné escutando música.",
+			},
+			jovemAdultez: {
+				src: "assets/images/external/psicoterapia_jovemAdultez_popup.jpg",
+				alt: "Jovem sorridente com beca de formatura.",
+			},
+			adultezMadura: {
+				src: "assets/images/external/psicoterapia_adultezMadura_popup.jpg",
+				alt: "Casal de adultos fazendo piquenique no parque.",
+			},
+			adultezTardia: {
+				src: "assets/images/external/psicoterapia_adultezTardia_popup.jpg",
+				alt: "Idosa com expressão ponderativa.",
+			},
+		},
 		firstFaq: [
 			{
 				src: "assets/images/external/psicoterapia_sofrimento.jpg",
@@ -593,6 +637,69 @@ const textLibrary = {
 		firstQuoteSection: {
 			content: `"A vida só pode ser compreendida olhando-se para trás; mas só pode ser vivida olhando-se para frente." -- Søren Kierkegaard (1813-1855)`,
 		},
+		ageRange: {
+			header: "Temas recorrentes na psicoterapia",
+			buttons: [
+				["Infância", () => fixedScreen.createAll("psicoterapia", "infancia")],
+				["Adolescência", () => fixedScreen.createAll("psicoterapia", "adolescencia")],
+				["Jovem Adultez", () => fixedScreen.createAll("psicoterapia", "jovemAdultez")],
+				["Adultez Madura", () => fixedScreen.createAll("psicoterapia", "adultezMadura")],
+				["Adultez Tardia", () => fixedScreen.createAll("psicoterapia", "adultezTardia")],
+			],
+		},
+		fixedScreen: {
+			infancia: {
+				header: "Infância",
+				subheader: `"Para um bebê, não existe essa coisa de um bebê — existe um bebê e alguém." - D.W. Winnicott\n\nAs primeiras experiências emocionais moldam a forma como nos relacionamos com o mundo. Na infância, a psicoterapia pode ajudar a compreender e elaborar:`,
+				content: [
+					"Dificuldades emocionais e comportamentais: Por exemplo, uma criança que tem explosões de raiva frequentes ou que evita interações sociais.",
+					"Angústias diante da separação ou mudanças significativas na rotina: Como uma criança que passa a ter medo intenso de ir à escola ou dificuldades após a chegada de um irmão.",
+					"Desafios na construção da autonomia e autoestima: Crianças que sentem muita insegurança para realizar atividades sozinhas ou medo excessivo de errar.",
+					"Relações com pares e primeiros conflitos sociais: Dificuldade em fazer amigos, sofrer ou praticar bullying, sentir-se excluído em ambientes sociais.",
+				],
+			},
+			adolescencia: {
+				header: "Adolescência",
+				subheader: `"A grande tragédia do mundo é que não cultivamos a capacidade de estar sozinhos, o que nos permitiria verdadeiramente estar com o outro." - D.W. Winnicott,\n\nA adolescência é um período de intensas transformações, onde emergem questões como:"`,
+				content: [
+					"Construção da identidade e busca por pertencimento: Como um adolescente que sente que não se encaixa em nenhum grupo ou que esconde partes de sua personalidade por medo da rejeição.",
+					"Conflitos familiares e desafios na comunicação: Discussões frequentes com os pais, sensação de não ser compreendido ou de não conseguir expressar suas emoções.",
+					"Ansiedade social e autoestima: Medo intenso de interações sociais, sensação de inadequação ou preocupação excessiva com a aparência.",
+					"Primeiras experiências amorosas e sexuais: Medo da rejeição, insegurança nos relacionamentos ou dificuldades para entender a própria sexualidade.",
+				],
+			},
+			jovemAdultez: {
+				header: "Jovem Adultez",
+				subheader: `"A coragem de ser é a coragem de aceitar a si mesmo, apesar de ser inaceitável." - D. W. Winnicottz\n\nA transição para a vida adulta traz desafios que frequentemente aparecem na terapia:`,
+				content: [
+					"Incertezas sobre o futuro acadêmico e profissional: Um jovem adulto que sente que escolheu a profissão errada ou que não sabe qual caminho seguir.",
+					"Relacionamentos amorosos e dinâmicas interpessoais: Dificuldades em estabelecer relações saudáveis, padrões repetitivos em relacionamentos ou medo da solidão.",
+					"Dificuldade para lidar com expectativas externas: Sensação de estar sempre aquém do esperado, medo de decepcionar os outros ou de não alcançar determinados padrões de sucesso.",
+					"Sentimentos de inadequação ou impasse diante das escolhas da vida: Questionamentos sobre identidade, propósito e sentido da vida, sensação de estagnação.",
+				],
+			},
+			adultezMadura: {
+				header: "Adultez Madura",
+				subheader: `O luto não é um estado, mas um processo." - S. Freud\n\nCom o passar do tempo, novas questões se impõem, e a psicoterapia pode ser um espaço para refletir sobre:`,
+				content: [
+					"Estresse, burnout e exaustão emocional: Profissionais que se sentem sobrecarregados no trabalho, esgotados emocionalmente e sem motivação.",
+					"Maternidade, paternidade e transformações na identidade: Mães e pais que sentem culpa ao equilibrar vida profissional e familiar ou que enfrentam desafios na criação dos filhos.",
+					"Perdas e luto em suas diversas formas: Enfrentar o luto por um ente querido, o fim de um relacionamento ou mudanças que exigem readaptação emocional.",
+					"Relações conjugais e redescoberta da individualidade: Casais que enfrentam crises na relação, pessoas que questionam se ainda estão felizes em seu casamento ou que buscam resgatar sua individualidade após anos dedicados à família.",
+				],
+			},
+			adultezTardia: {
+				header: "Adultez Tardia",
+				subheader: `"Cada um de nós morre apenas uma vez, mas a cada dia pode sofrer perdas e renascimentos." - S. Ferenczi\n\nO processo de envelhecimento traz desafios e reflexões que podem ser trabalhadas na psicoterapia:`,
+				content: [
+					"Mudanças na identidade e no papel social: Pessoas que se aposentam e sentem que perderam uma parte importante de sua identidade profissional.",
+					"Solidão e redes de apoio: Afastamento dos filhos, perda de amigos ou dificuldade em criar novos vínculos sociais.",
+					"Enfrentamento de perdas e luto: Lidar com a perda do cônjuge, de amigos ou da própria autonomia em algumas áreas da vida.",
+					"Reflexões sobre legado e propósito: Revisão da trajetória de vida, necessidade de ressignificar conquistas e desafios vividos.",
+					"Adaptação a mudanças físicas e emocionais: Processos naturais do envelhecimento que podem gerar angústias, como mudanças no corpo, na saúde e na cognição.",
+				],
+			},
+		},
 		firstFaq: {
 			header: "Perguntas Frequentes",
 			dropdown: [
@@ -609,7 +716,7 @@ const textLibrary = {
 				{
 					header: "Como funciona a abordagem teórica de orientação psicanalítica?",
 					content:
-						"A psicoterapia de orientação psicanalítica baseia-se nos conceitos fundamentais da psicanálise, desenvolvidos por Sigmund Freud e ampliados por outros teóricos, como Melanie Klein, Donald Winnicott e Jacques Lacan.\n\nSeu objetivo central é explorar os conteúdos inconscientes que influenciam pensamentos, emoções e comportamentos, ajudando o paciente a compreender e transformar padrões psicológicos que causam sofrimento.",
+						"A psicoterapia de orientação psicanalítica baseia-se nos conceitos fundamentais da psicanálise, desenvolvidos por Sigmund Freud e ampliados por outros teóricos, como Melanie Klein, Donald Winnicott e Wilfred Bion.\n\nSeu objetivo central é explorar os conteúdos inconscientes que influenciam pensamentos, emoções e comportamentos, ajudando o paciente a compreender e transformar padrões psicológicos que causam sofrimento.",
 				},
 				{
 					header: "Quais são as técnicas utilizadas no processo terapêutico?",

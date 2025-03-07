@@ -354,9 +354,6 @@
 	display: block;
 	text-align: left;
 }
-.benefits p::before {
-	content: var(--arrow-right);
-}
 @media (max-width: 1024px) {
 	.benefits {
 		margin-block: 1rem;
@@ -886,7 +883,7 @@
 	padding-inline: 2rem;
 	transition: 0.2s ease-in-out;
 	display: grid;
-	grid-template-columns: 5fr 90fr 5fr;
+	grid-template-columns: 95fr 5fr;
 	align-items: center;
 	font-size: 1.3rem;
 }
@@ -896,9 +893,6 @@
 }
 .dropdownHeader:active {
 	background-color: var(--accent-color-active);
-}
-.dropdownHeader::before {
-	content: var(--arrow-right);
 }
 .arrowBottom::after {
 	content: "";
