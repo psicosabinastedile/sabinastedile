@@ -32,9 +32,6 @@
 
 	--page-header-height: 12vh;
 	--border-radius: 10px;
-
-	/* Symbols */
-	--arrow-right: "";
 }
 
 /* General */
@@ -300,6 +297,7 @@ img {
 	background-color: var(--text-color);
 	width: 0.5rem;
 	height: 0.5rem;
+	aspect-ratio: 1/1;
 }
 .fixedScreenRight {
 	display: grid;
