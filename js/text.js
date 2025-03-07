@@ -130,23 +130,23 @@ const imageLibrary = {
 	psicoterapia: {
 		ageRange: [
 			{
-				src: "assets/images/external/psicoterapia_infancia.jpg",
+				src: "../assets/images/external/psicoterapia_infancia.jpg",
 				alt: "Criança feliz correndo sobre a grama em direção à câmera.",
 			},
 			{
-				src: "assets/images/external/psicoterapia_adolescencia.jpg",
+				src: "../assets/images/external/psicoterapia_adolescencia.jpg",
 				alt: "Adolescente atentiva mexendo no celular.",
 			},
 			{
-				src: "assets/images/external/psicoterapia_jovemAdultez.jpg",
+				src: "../assets/images/external/psicoterapia_jovemAdultez.jpg",
 				alt: "Jovem em cima do muro observando a paisagem.",
 			},
 			{
-				src: "assets/images/external/psicoterapia_adultezMadura.jpg",
+				src: "../assets/images/external/psicoterapia_adultezMadura.jpg",
 				alt: "Senhora sorrindo para a câmera.",
 			},
 			{
-				src: "assets/images/external/psicoterapia_adultezTardia.jpg",
+				src: "../assets/images/external/psicoterapia_adultezTardia.jpg",
 				alt: "Senhora sorrindo de lado.",
 			},
 		],
