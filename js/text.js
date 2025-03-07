@@ -562,10 +562,10 @@ const textLibrary = {
 		ageRange: {
 			header: "Principais Demandas por Faixa Etária",
 			buttons: [
-				["Idade Pré-Escolar\n2 a 5 anos", () => fixedScreen.createAll("preEscolar")],
-				["Idade Escolar\n6 a 12 anos", () => fixedScreen.createAll("escolar")],
-				["Adolescentes\ne Adultos", () => fixedScreen.createAll("adultez")],
-				["Contexto do\nEnvelhecimento", () => fixedScreen.createAll("envelhecimento")],
+				["Idade Pré-Escolar\n2 a 5 anos", () => fixedScreen.createAll("avaliacaoNeuropsicologica", "preEscolar")],
+				["Idade Escolar\n6 a 12 anos", () => fixedScreen.createAll("avaliacaoNeuropsicologica", "escolar")],
+				["Adolescentes\ne Adultos", () => fixedScreen.createAll("avaliacaoNeuropsicologica", "adultez")],
+				["Contexto do\nEnvelhecimento", () => fixedScreen.createAll("avaliacaoNeuropsicologica", "envelhecimento")],
 			],
 		},
 		fixedScreen: {
